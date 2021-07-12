@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testSuite id="286f68b9-7b51-4443-b397-2e57c8d9b5bc" name="http://api.irishrail.ie Test Suite" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="286f68b9-7b51-4443-b397-2e57c8d9b5bcfileName">http%3A%2F%2Fapi.irishrail.ie-Test-Suite</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:runType>SEQUENTIAL</con:runType>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testSuite>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="c8780b50-4d0e-4782-b2f6-2ce9da20c3ea" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="Test Case 1" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="c8780b50-4d0e-4782-b2f6-2ce9da20c3eafileName">Test-Case-1</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="restrequest" name="Request Stations" id="5d820b5e-c2f7-4d84-b3d7-27b2b0c55ecd">
+    <con:settings/>
+    <con:config service="http://api.irishrail.ie" resourcePath="/realtime/realtime.asmx/getAllStationsXML" methodName="GetAllStationsXML" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="Request Stations" id="ed931a6f-aa7f-4420-a291-0971a65505d0" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>http://api.irishrail.ie</con:endpoint>
+        <con:request/>
+        <con:originalUri>http://api.irishrail.ie/realtime/realtime.asmx/getAllStationsXML</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="80ae0e5d-ca9d-40ca-aa14-3ec3f4f177dd" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters/>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="Station 1" id="71028113-13ac-489c-97b7-da68e02762eb">
+    <con:settings/>
+    <con:config service="http://api.irishrail.ie" resourcePath="/realtime/realtime.asmx/getStationDataByNameXML" methodName="GetStationDataByNameXML" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="Station 1" id="7aa63b79-0e06-48ff-b5a2-6e242b56337d" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>http://api.irishrail.ie</con:endpoint>
+        <con:request/>
+        <con:originalUri>http://api.irishrail.ie/realtime/realtime.asmx/getStationDataByNameXML</con:originalUri>
+        <con:assertion type="Response SLA Assertion" id="29462b71-b243-4fa5-af76-1d3509f25db0" name="Response SLA">
+          <con:configuration>
+            <SLA>500</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="StationDesc" value="${Request Stations#Response#declare namespace ns1='http://api.irishrail.ie/realtime/'; //ns1:ArrayOfObjStation[1]/ns1:objStation[1]/ns1:StationDesc[1]}"/>
+        </con:parameters>
+        <con:parameterOrder>
+          <con:entry>StationDesc</con:entry>
+        </con:parameterOrder>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="Station 2" id="b130f7f9-7328-46a2-8d4e-98bb6d6e70ae">
+    <con:settings/>
+    <con:config service="http://api.irishrail.ie" resourcePath="/realtime/realtime.asmx/getStationDataByNameXML" methodName="GetStationDataByNameXML" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="Station 2" id="7aa63b79-0e06-48ff-b5a2-6e242b56337d" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>http://api.irishrail.ie</con:endpoint>
+        <con:request/>
+        <con:originalUri>http://api.irishrail.ie/realtime/realtime.asmx/getStationDataByNameXML</con:originalUri>
+        <con:assertion type="Response SLA Assertion" name="Response SLA" id="94033a08-b2cd-4d29-9a73-75344fa4f2bb">
+          <con:configuration>
+            <SLA>500</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" name="Response SLA 2">
+          <con:configuration>
+            <SLA>500</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="StationDesc" value="${Request Stations#Response#declare namespace ns1='http://api.irishrail.ie/realtime/'; //ns1:ArrayOfObjStation[1]/ns1:objStation[2]/ns1:StationDesc[1]}"/>
+        </con:parameters>
+        <con:parameterOrder>
+          <con:entry>StationDesc</con:entry>
+        </con:parameterOrder>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="Station 3" id="9639a0fd-dc0f-4c00-a10c-064bcf1b1a2c">
+    <con:settings/>
+    <con:config service="http://api.irishrail.ie" resourcePath="/realtime/realtime.asmx/getStationDataByNameXML" methodName="GetStationDataByNameXML" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="Station 3" id="7aa63b79-0e06-48ff-b5a2-6e242b56337d" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>http://api.irishrail.ie</con:endpoint>
+        <con:request/>
+        <con:originalUri>http://api.irishrail.ie/realtime/realtime.asmx/getStationDataByNameXML</con:originalUri>
+        <con:assertion type="Response SLA Assertion" name="Response SLA" id="3cc89436-b5ad-4e2f-8d02-55936a940d75">
+          <con:configuration>
+            <SLA>500</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" name="Response SLA 2">
+          <con:configuration>
+            <SLA>500</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="StationDesc" value="${Request Stations#Response#declare namespace ns1='http://api.irishrail.ie/realtime/'; //ns1:ArrayOfObjStation[1]/ns1:objStation[3]/ns1:StationDesc[1]}"/>
+        </con:parameters>
+        <con:parameterOrder>
+          <con:entry>StationDesc</con:entry>
+        </con:parameterOrder>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="Station 4" id="4983a02d-8342-428b-8938-2803601b3eb7">
+    <con:settings/>
+    <con:config service="http://api.irishrail.ie" resourcePath="/realtime/realtime.asmx/getStationDataByNameXML" methodName="GetStationDataByNameXML" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="Station 4" id="7aa63b79-0e06-48ff-b5a2-6e242b56337d" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>http://api.irishrail.ie</con:endpoint>
+        <con:request/>
+        <con:originalUri>http://api.irishrail.ie/realtime/realtime.asmx/getStationDataByNameXML</con:originalUri>
+        <con:assertion type="Response SLA Assertion" name="Response SLA" id="7ade0181-aeb1-4d43-b36b-69b5e38d4d74">
+          <con:configuration>
+            <SLA>500</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" name="Response SLA 2">
+          <con:configuration>
+            <SLA>500</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="StationDesc" value="${Request Stations#Response#declare namespace ns1='http://api.irishrail.ie/realtime/'; //ns1:ArrayOfObjStation[1]/ns1:objStation[4]/ns1:StationDesc[1]}"/>
+        </con:parameters>
+        <con:parameterOrder>
+          <con:entry>StationDesc</con:entry>
+        </con:parameterOrder>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="Station 5" id="dad7e0ee-6b62-4021-8579-78d25f2a3d30">
+    <con:settings/>
+    <con:config service="http://api.irishrail.ie" resourcePath="/realtime/realtime.asmx/getStationDataByNameXML" methodName="GetStationDataByNameXML" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="Station 5" id="7aa63b79-0e06-48ff-b5a2-6e242b56337d" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>http://api.irishrail.ie</con:endpoint>
+        <con:request/>
+        <con:originalUri>http://api.irishrail.ie/realtime/realtime.asmx/getStationDataByNameXML</con:originalUri>
+        <con:assertion type="Response SLA Assertion" name="Response SLA" id="702aec8e-402b-4cd1-8175-139a6f97c43e">
+          <con:configuration>
+            <SLA>500</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" name="Response SLA 2">
+          <con:configuration>
+            <SLA>500</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="StationDesc" value="${Request Stations#Response#declare namespace ns1='http://api.irishrail.ie/realtime/'; //ns1:ArrayOfObjStation[1]/ns1:objStation[5]/ns1:StationDesc[1]}"/>
+        </con:parameters>
+        <con:parameterOrder>
+          <con:entry>StationDesc</con:entry>
+        </con:parameterOrder>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+  <con:breakPoints>
+    <con:testStepId>b130f7f9-7328-46a2-8d4e-98bb6d6e70ae</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+</con:testCase>

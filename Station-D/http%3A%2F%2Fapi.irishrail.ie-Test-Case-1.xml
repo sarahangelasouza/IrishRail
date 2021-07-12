@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="bc4a8b88-6cec-40da-9c80-64588380a6db" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="http://api.irishrail.ie Test Case 1" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="bc4a8b88-6cec-40da-9c80-64588380a6dbfileName">http%3A%2F%2Fapi.irishrail.ie-Test-Case-1</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="Request 1" id="8341aafd-0c4f-4452-8732-1cde751cef04">
+    <con:settings/>
+    <con:config service="http://api.irishrail.ie" resourcePath="/realtime/realtime.asmx/getAllStationsXML_WithStationType" methodName="GetAllStationsXML_WithStationType" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="Request 1" id="6b84757f-3cf2-4e0a-b72a-f2f34f59a708" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>http://api.irishrail.ie</con:endpoint>
+        <con:request/>
+        <con:originalUri>http://api.irishrail.ie/realtime/realtime.asmx/getAllStationsXML_WithStationType</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="794377ce-db92-4e9b-890e-752e35aa8759" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="fb10967f-ade5-4363-a2da-c849cb2b660c" name="Response SLA">
+          <con:configuration>
+            <SLA>500</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="StationType" value="D"/>
+        </con:parameters>
+        <con:parameterOrder>
+          <con:entry>StationType</con:entry>
+        </con:parameterOrder>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

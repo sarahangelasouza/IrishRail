@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:interface xsi:type="con:RestService" id="fcab9045-c83c-43f0-b7bc-182071bd580d" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://api.irishrail.ie" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="fcab9045-c83c-43f0-b7bc-182071bd580dfileName">http%3A%2F%2Fapi.irishrail.ie</con:setting>
+  </con:settings>
+  <con:definitionCache type="TEXT" rootPart=""/>
+  <con:endpoints>
+    <con:endpoint>http://api.irishrail.ie</con:endpoint>
+  </con:endpoints>
+</con:interface>

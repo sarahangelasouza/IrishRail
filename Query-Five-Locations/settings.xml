@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testSuite id="83951f7e-b375-4b42-a76a-b0339706e44b" name="Query Five Locations" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="83951f7e-b375-4b42-a76a-b0339706e44bfileName">Query-Five-Locations</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:runType>SEQUENTIAL</con:runType>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testSuite>

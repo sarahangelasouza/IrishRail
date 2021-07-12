@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="fb64dd6f-3f6e-4ccf-8134-79354f9b7df9" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="http://api.irishrail.ie Test Case 1" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="fb64dd6f-3f6e-4ccf-8134-79354f9b7df9fileName">http%3A%2F%2Fapi.irishrail.ie-Test-Case-1</con:setting>
+  </con:settings>
+  <con:testStep type="restrequest" name="Request 1" id="a090352d-01ec-42eb-9dda-767ac2d26458">
+    <con:settings/>
+    <con:config service="http://api.irishrail.ie" resourcePath="/realtime/realtime.asmx/getCurrentTrainsXML" methodName="GetCurrentTrainsXML" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="Request 1" id="d437a0c0-640a-4999-9ec8-1cc37d7b8ad9" mediaType="application/json">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>http://api.irishrail.ie</con:endpoint>
+        <con:request/>
+        <con:originalUri>http://api.irishrail.ie/realtime/realtime.asmx/getCurrentTrainsXML</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="60a82843-1bec-4352-8a4b-d6a701f68ef4" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="afcfe8cf-2964-446f-88cd-3ff3b59f050e" name="Response SLA">
+          <con:configuration>
+            <SLA>1000</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters/>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>
