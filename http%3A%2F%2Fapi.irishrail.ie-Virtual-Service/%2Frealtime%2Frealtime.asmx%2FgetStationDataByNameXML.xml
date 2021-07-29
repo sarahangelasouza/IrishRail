@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockAction name="/realtime/realtime.asmx/getStationDataByNameXML" method="GET" resourcePath="/realtime/realtime.asmx/getStationDataByNameXML" id="0ec57a63-d39c-45ed-a5f2-97ac1a85641a" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="0ec57a63-d39c-45ed-a5f2-97ac1a85641afileName">%2Frealtime%2Frealtime.asmx%2FgetStationDataByNameXML</con:setting>
+  </con:settings>
+  <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchXPath/>
+  <con:routeScript/>
+  <con:response name="Response 1" id="322e33da-f47b-4f71-a4bb-ced5117d2df3" httpResponseStatus="200" mediaType="text/xml" encoding="utf-8" dataSource="">
+    <con:settings/>
+    <con:responseContent/>
+  </con:response>
+</con:restMockAction>

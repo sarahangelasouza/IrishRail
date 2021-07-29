@@ -73,7 +73,7 @@
             <SLA>500</SLA>
           </con:configuration>
         </con:assertion>
-        <con:assertion type="Response SLA Assertion" name="Response SLA 2">
+        <con:assertion type="Response SLA Assertion" name="Response SLA 2" id="8b2bd75a-bf90-4a30-a8e5-eabbfab17a85">
           <con:configuration>
             <SLA>500</SLA>
           </con:configuration>
@@ -107,7 +107,7 @@
             <SLA>500</SLA>
           </con:configuration>
         </con:assertion>
-        <con:assertion type="Response SLA Assertion" name="Response SLA 2">
+        <con:assertion type="Response SLA Assertion" name="Response SLA 2" id="834a833f-aa9f-4ca6-a481-e94d293b931e">
           <con:configuration>
             <SLA>500</SLA>
           </con:configuration>
@@ -141,7 +141,7 @@
             <SLA>500</SLA>
           </con:configuration>
         </con:assertion>
-        <con:assertion type="Response SLA Assertion" name="Response SLA 2">
+        <con:assertion type="Response SLA Assertion" name="Response SLA 2" id="b67520d6-4c6f-4477-8070-2f70cba5c845">
           <con:configuration>
             <SLA>500</SLA>
           </con:configuration>
@@ -175,7 +175,7 @@
             <SLA>500</SLA>
           </con:configuration>
         </con:assertion>
-        <con:assertion type="Response SLA Assertion" name="Response SLA 2">
+        <con:assertion type="Response SLA Assertion" name="Response SLA 2" id="94e9d918-54fc-460b-92a9-df54cc0223f1">
           <con:configuration>
             <SLA>500</SLA>
           </con:configuration>

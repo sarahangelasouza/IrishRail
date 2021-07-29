@@ -38,6 +38,7 @@
   <con:entry key="Tool Args" value=""/>
   <con:entry key="Save Project" value="false"/>
 </xml-fragment>]]></con:setting>
+    <con:setting id="d9fbed5b-52e9-40e1-b117-a3ea46d702d7fileName">Irish-Rail--Rest--readyapi-project</con:setting>
   </con:settings>
   <con:savedRecentRuns>1</con:savedRecentRuns>
   <con:requirements/>
@@ -76,6 +77,10 @@
 // pw.close()
 // fos.close()</con:script>
   </con:eventHandlers>
+  <con:virtServer>
+    <con:name>https://ec2-18-224-146-21.us-east-2.compute.amazonaws.com:9090</con:name>
+    <con:url>https://ec2-18-224-146-21.us-east-2.compute.amazonaws.com:9090</con:url>
+  </con:virtServer>
   <con:authRepository/>
   <con:tags/>
 </con:soapui-project>
