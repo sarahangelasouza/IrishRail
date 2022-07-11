@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource name="GetAllStationsXML_WithStationType" path="/realtime/realtime.asmx/getAllStationsXML_WithStationType" id="49e34e0c-6257-424d-9da2-dad6a15ab7f9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+<con:resource id="49e34e0c-6257-424d-9da2-dad6a15ab7f9" name="GetAllStationsXML_WithStationType" path="/realtime/realtime.asmx/getAllStationsXML_WithStationType" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="49e34e0c-6257-424d-9da2-dad6a15ab7f9fileName">GetAllStationsXML_WithStationType</con:setting>
   </con:settings>
   <con:parameters/>
-  <con:method name="GetAllStationsXML_WithStationType" id="841d03b1-6cee-40b1-982b-7a8312a20871" method="GET">
+  <con:method id="841d03b1-6cee-40b1-982b-7a8312a20871" method="GET" name="GetAllStationsXML_WithStationType">
     <con:settings/>
     <con:parameters>
       <con:parameter required="true">
@@ -12,17 +12,17 @@
         <con:value>D</con:value>
         <con:style>QUERY</con:style>
         <con:default>D</con:default>
-        <con:path xsi:nil="true"/>
-        <con:description xsi:nil="true"/>
+        <con:path/>
+        <con:description/>
       </con:parameter>
     </con:parameters>
     <con:representation type="RESPONSE">
       <con:mediaType>text/xml; charset=utf-8</con:mediaType>
       <con:status>200</con:status>
       <con:params/>
-      <con:element xmlns:real="http://api.irishrail.ie/realtime/">real:ArrayOfObjStation</con:element>
+      <con:element>real:ArrayOfObjStation</con:element>
     </con:representation>
-    <con:request name="Request 1" id="6b84757f-3cf2-4e0a-b72a-f2f34f59a708" mediaType="application/json">
+    <con:request id="6b84757f-3cf2-4e0a-b72a-f2f34f59a708" mediaType="application/json" name="Request 1">
       <con:settings/>
       <con:endpoint>http://api.irishrail.ie</con:endpoint>
       <con:request/>

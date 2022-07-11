@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:testCase id="11caa7a1-538c-47cb-b678-2a5b99b694e6" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" keepSession="false" name="http://api.irishrail.ie Test Case 1" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+<con:testCase discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" id="11caa7a1-538c-47cb-b678-2a5b99b694e6" keepSession="false" name="GetAllStations" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
-    <con:setting id="11caa7a1-538c-47cb-b678-2a5b99b694e6fileName">http%3A%2F%2Fapi.irishrail.ie-Test-Case-1</con:setting>
+    <con:setting id="11caa7a1-538c-47cb-b678-2a5b99b694e6fileName">GetAllStations</con:setting>
   </con:settings>
   <con:savedRecentRuns>1</con:savedRecentRuns>
-  <con:testStep type="restrequest" name="Request 1" id="4b08c1c6-7b73-440c-8916-2a8d78519de9">
+  <con:testStep id="4b08c1c6-7b73-440c-8916-2a8d78519de9" name="Request 1" type="restrequest">
     <con:settings/>
-    <con:config service="http://api.irishrail.ie" resourcePath="/realtime/realtime.asmx/getAllStationsXML" methodName="GetAllStationsXML" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-      <con:restRequest name="Request 1" id="ed931a6f-aa7f-4420-a291-0971a65505d0" mediaType="application/json">
+    <con:config xsi:type="con:RestRequestStep" methodName="GetAllStationsXML" resourcePath="/realtime/realtime.asmx/getAllStationsXML" service="http://api.irishrail.ie" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest id="ed931a6f-aa7f-4420-a291-0971a65505d0" mediaType="application/json" name="Request 1">
         <con:settings>
           <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
         </con:settings>
         <con:endpoint>http://api.irishrail.ie</con:endpoint>
         <con:request/>
         <con:originalUri>http://api.irishrail.ie/realtime/realtime.asmx/getAllStationsXML</con:originalUri>
-        <con:assertion type="Valid HTTP Status Codes" id="1870df9c-f687-4390-adda-51185de2d094" name="Valid HTTP Status Codes">
+        <con:assertion id="1870df9c-f687-4390-adda-51185de2d094" name="Valid HTTP Status Codes" type="Valid HTTP Status Codes">
           <con:settings/>
           <con:configuration>
             <codes>200</codes>
           </con:configuration>
         </con:assertion>
-        <con:assertion type="Response SLA Assertion" id="a0bdc1fa-3a39-4aac-9174-a5c5e69ee06a" name="Response SLA">
+        <con:assertion id="a0bdc1fa-3a39-4aac-9174-a5c5e69ee06a" name="Response SLA" type="Response SLA Assertion">
           <con:configuration>
             <SLA>1000</SLA>
           </con:configuration>

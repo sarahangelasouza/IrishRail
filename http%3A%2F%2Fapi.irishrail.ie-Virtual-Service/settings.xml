@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:restMockService id="c0285eaf-d169-413d-96b1-2dd4c808074a" port="8088" path="/" host="localhost" name="http://api.irishrail.ie Virtual Service" xmlns:con="http://eviware.com/soapui/config">
+<con:restMockService host="localhost" id="c0285eaf-d169-413d-96b1-2dd4c808074a" name="http://api.irishrail.ie Virtual Service" path="/" port="8088" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="c0285eaf-d169-413d-96b1-2dd4c808074afileName">http%3A%2F%2Fapi.irishrail.ie-Virtual-Service</con:setting>
   </con:settings>

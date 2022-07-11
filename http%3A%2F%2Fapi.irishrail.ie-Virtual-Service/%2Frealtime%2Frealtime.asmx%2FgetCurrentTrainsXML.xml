@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:restMockAction name="/realtime/realtime.asmx/getCurrentTrainsXML" method="GET" resourcePath="/realtime/realtime.asmx/getCurrentTrainsXML" id="dcb1e6ab-33c2-4d17-aefa-02db5e9e41df" xmlns:con="http://eviware.com/soapui/config">
+<con:restMockAction id="dcb1e6ab-33c2-4d17-aefa-02db5e9e41df" method="GET" name="/realtime/realtime.asmx/getCurrentTrainsXML" resourcePath="/realtime/realtime.asmx/getCurrentTrainsXML" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="dcb1e6ab-33c2-4d17-aefa-02db5e9e41dffileName">%2Frealtime%2Frealtime.asmx%2FgetCurrentTrainsXML</con:setting>
   </con:settings>
@@ -7,7 +7,7 @@
   <con:dispatchConfig/>
   <con:dispatchXPath/>
   <con:routeScript/>
-  <con:response name="Response 1" id="d48e733c-c691-4251-aaa4-1ddcde8d7417" httpResponseStatus="200" mediaType="text/xml" encoding="utf-8" dataSource="">
+  <con:response dataSource="" encoding="utf-8" httpResponseStatus="200" id="d48e733c-c691-4251-aaa4-1ddcde8d7417" mediaType="text/xml" name="Response 1">
     <con:settings/>
     <con:responseContent/>
   </con:response>

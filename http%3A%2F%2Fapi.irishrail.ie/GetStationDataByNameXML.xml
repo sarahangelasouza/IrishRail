@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource name="GetStationDataByNameXML" path="/realtime/realtime.asmx/getStationDataByNameXML" id="c04a2a33-8836-418d-a41c-811f0c95dc01" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+<con:resource id="c04a2a33-8836-418d-a41c-811f0c95dc01" name="GetStationDataByNameXML" path="/realtime/realtime.asmx/getStationDataByNameXML" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="c04a2a33-8836-418d-a41c-811f0c95dc01fileName">GetStationDataByNameXML</con:setting>
   </con:settings>
   <con:parameters/>
-  <con:method name="GetStationDataByNameXML" id="125725dc-7587-4602-b54a-cb203d2bccac" method="GET">
+  <con:method id="125725dc-7587-4602-b54a-cb203d2bccac" method="GET" name="GetStationDataByNameXML">
     <con:settings/>
     <con:parameters>
       <con:parameter required="true">
@@ -12,17 +12,17 @@
         <con:value>Bayside</con:value>
         <con:style>QUERY</con:style>
         <con:default>Bayside</con:default>
-        <con:path xsi:nil="true"/>
-        <con:description xsi:nil="true"/>
+        <con:path/>
+        <con:description/>
       </con:parameter>
     </con:parameters>
     <con:representation type="RESPONSE">
       <con:mediaType>text/xml; charset=utf-8</con:mediaType>
       <con:status>200</con:status>
       <con:params/>
-      <con:element xmlns:real="http://api.irishrail.ie/realtime/">real:ArrayOfObjStationData</con:element>
+      <con:element>real:ArrayOfObjStationData</con:element>
     </con:representation>
-    <con:request name="Request 1" id="7aa63b79-0e06-48ff-b5a2-6e242b56337d" mediaType="application/json">
+    <con:request id="7aa63b79-0e06-48ff-b5a2-6e242b56337d" mediaType="application/json" name="Request 1">
       <con:settings/>
       <con:endpoint>http://api.irishrail.ie</con:endpoint>
       <con:request/>
