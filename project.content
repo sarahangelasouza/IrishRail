@@ -3,10 +3,11 @@ http%3A%2F%2Fapi.irishrail.ie\GetAllStationsXML_WithStationType.xml
 http%3A%2F%2Fapi.irishrail.ie\GetCurrentTrainsXML.xml
 http%3A%2F%2Fapi.irishrail.ie\GetStationDataByNameXML.xml
 http%3A%2F%2Fapi.irishrail.ie-Test-Suite\GetAllStations.xml
-http%3A%2F%2Fapi.irishrail.ie-Test-Suite-2\http%3A%2F%2Fapi.irishrail.ie-Test-Case-1.xml
-Bayside-Request\http%3A%2F%2Fapi.irishrail.ie-Test-Case-1.xml
-GetStationInfo\GetStationD.xml
+Bayside-Request\Bayside.xml
+Bayside-Request\Belfast.xml
+Bayside-Request\Lisburn.xml
 Query-Five-Locations\Test-Case-1.xml
+Multi-test.xml
 http%3A%2F%2Fapi.irishrail.ie-Virtual-Service\%2Frealtime%2Frealtime.asmx%2FgetAllStationsXML.xml
 http%3A%2F%2Fapi.irishrail.ie-Virtual-Service\%2Frealtime%2Frealtime.asmx%2FgetAllStationsXML_WithStationType.xml
 http%3A%2F%2Fapi.irishrail.ie-Virtual-Service\%2Frealtime%2Frealtime.asmx%2FgetCurrentTrainsXML.xml
