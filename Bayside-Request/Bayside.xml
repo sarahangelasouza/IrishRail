@@ -36,9 +36,19 @@
         <con:parameterOrder>
           <con:entry>StationDesc</con:entry>
         </con:parameterOrder>
+        <con:environmentSpec>
+          <con:entry environmentId="5bde98c7-81ae-4e7e-8f4e-ccec22a65cbf">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
       </con:restRequest>
     </con:config>
   </con:testStep>
   <con:properties/>
   <con:reportParameters/>
+  <con:environmentSpec>
+    <con:entry environmentId="5bde98c7-81ae-4e7e-8f4e-ccec22a65cbf">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
 </con:testCase>

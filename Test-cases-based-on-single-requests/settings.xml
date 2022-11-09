@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testSuite id="4e71b17e-8acc-41ea-aaeb-b0a4e7bc6667" name="Test cases based on single requests" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="4e71b17e-8acc-41ea-aaeb-b0a4e7bc6667fileName">Test-cases-based-on-single-requests</con:setting>
+  </con:settings>
+  <con:runType>SEQUENTIAL</con:runType>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testSuite>

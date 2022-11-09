@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project activeEnvironment="Default environment" compositeProjectFormat="1.3" created="3.8.0" encryptionMode="Not encrypted" id="d9fbed5b-52e9-40e1-b117-a3ea46d702d7" name="Irish Rail (Rest)" resourceRoot="" updated="3.40.2" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config">
+<con:soapui-project activeEnvironment="Default environment" compositeProjectFormat="1.3" created="3.8.0" encryptionMode="Not encrypted" id="d9fbed5b-52e9-40e1-b117-a3ea46d702d7" name="Irish Rail (Rest)" resourceRoot="" updated="3.41.1" abortOnError="false" runType="SEQUENTIAL" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.ProTestRunnerUIAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
   <con:entry key="Settings File Password" value=""/>
@@ -39,6 +39,33 @@
   <con:entry key="Save Project" value="false"/>
 </xml-fragment>]]></con:setting>
     <con:setting id="d9fbed5b-52e9-40e1-b117-a3ea46d702d7fileName">Irish-Rail--Rest--readyapi-project</con:setting>
+    <con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.LoadUITestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Settings File Password" value=""/>
+  <con:entry key="" value=""/>
+  <con:entry key="Local Mode" value="false"/>
+  <con:entry key="SelectedStatistics" value=""/>
+  <con:entry key="Target Number Limit" value=""/>
+  <con:entry key="Group results" value="false"/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Create Reports" value="false"/>
+  <con:entry key="Test Duration Limit" value=""/>
+  <con:entry key="Abort Requests" value=""/>
+  <con:entry key="Report Format" value="Default"/>
+  <con:entry key="Agents" value=""/>
+  <con:entry key="JUnit-Style Results" value="false"/>
+  <con:entry key="Arriving/Base VUs" value=""/>
+  <con:entry key="Statistics" value=""/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="Failure Limit" value=""/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="TestRunner Path" value=""/>
+  <con:entry key="Project password" value=""/>
+  <con:entry key="Environment" value="No Environment"/>
+  <con:entry key="ExportStatistics" value=""/>
+  <con:entry key="Root Folder" value=""/>
+  <con:entry key="Performance Test" value="Load Test 2"/>
+  <con:entry key="Save Project" value="false"/>
+</xml-fragment>]]></con:setting>
   </con:settings>
   <con:savedRecentRuns>1</con:savedRecentRuns>
   <con:requirements/>
@@ -77,10 +104,22 @@
 // pw.close()
 // fos.close()</con:script>
   </con:eventHandlers>
+  <con:environment id="5bde98c7-81ae-4e7e-8f4e-ccec22a65cbf" name="test env" index="0">
+    <con:service type="REST" name="http://api.irishrail.ie">
+      <con:endpoint authProfile="No Authorization" proxyHost="" proxyPort="" proxyUsername="" proxyPassword="">localhost:0</con:endpoint>
+    </con:service>
+    <con:databaseConnectionContainer/>
+    <con:jmsConnectionContainer/>
+  </con:environment>
   <con:virtServer>
     <con:name>https://ec2-18-224-146-21.us-east-2.compute.amazonaws.com:9090</con:name>
     <con:url>https://ec2-18-224-146-21.us-east-2.compute.amazonaws.com:9090</con:url>
   </con:virtServer>
   <con:authRepository/>
+  <con:environmentSpec>
+    <con:entry environmentId="5bde98c7-81ae-4e7e-8f4e-ccec22a65cbf">
+      <con:authProfile>No Authorization</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
   <con:tags/>
 </con:soapui-project>

@@ -23,8 +23,10 @@
       <con:element>real:ArrayOfObjStation</con:element>
     </con:representation>
     <con:request id="6b84757f-3cf2-4e0a-b72a-f2f34f59a708" mediaType="application/json" name="Request 1">
-      <con:settings/>
-      <con:endpoint>http://api.irishrail.ie</con:endpoint>
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>http://localhost:8088/</con:endpoint>
       <con:request/>
       <con:credentials>
         <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
@@ -37,6 +39,21 @@
       <con:parameterOrder>
         <con:entry>StationType</con:entry>
       </con:parameterOrder>
+      <con:environmentSpec>
+        <con:entry environmentId="5bde98c7-81ae-4e7e-8f4e-ccec22a65cbf">
+          <con:authProfile>Inherit From Parent</con:authProfile>
+        </con:entry>
+      </con:environmentSpec>
     </con:request>
+    <con:environmentSpec>
+      <con:entry environmentId="5bde98c7-81ae-4e7e-8f4e-ccec22a65cbf">
+        <con:authProfile>Inherit From Parent</con:authProfile>
+      </con:entry>
+    </con:environmentSpec>
   </con:method>
+  <con:environmentSpec>
+    <con:entry environmentId="5bde98c7-81ae-4e7e-8f4e-ccec22a65cbf">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
 </con:resource>

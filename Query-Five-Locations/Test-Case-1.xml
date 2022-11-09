@@ -4,6 +4,14 @@
     <con:setting id="c8780b50-4d0e-4782-b2f6-2ce9da20c3eafileName">Test-Case-1</con:setting>
   </con:settings>
   <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep type="datasource" name="Data Source" id="01629c77-0242-4986-b469-994dcf64ce38" disabled="true">
+    <con:settings/>
+    <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:shared>true</con:shared>
+      <con:restartShared>true</con:restartShared>
+      <con:restartOnRun>true</con:restartOnRun>
+    </con:config>
+  </con:testStep>
   <con:testStep id="5d820b5e-c2f7-4d84-b3d7-27b2b0c55ecd" name="Request Stations" type="restrequest">
     <con:settings/>
     <con:config xsi:type="con:RestRequestStep" methodName="GetAllStationsXML" resourcePath="/realtime/realtime.asmx/getAllStationsXML" service="http://api.irishrail.ie" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
@@ -20,12 +28,22 @@
             <codes>200</codes>
           </con:configuration>
         </con:assertion>
+        <con:assertion type="Response SLA Assertion" id="f7bda40b-f030-492d-9683-b241007e7c37" name="Response SLA">
+          <con:configuration>
+            <SLA>300</SLA>
+          </con:configuration>
+        </con:assertion>
         <con:credentials>
           <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
           <con:authType>No Authorization</con:authType>
         </con:credentials>
         <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters/>
+        <con:environmentSpec>
+          <con:entry environmentId="5bde98c7-81ae-4e7e-8f4e-ccec22a65cbf">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
       </con:restRequest>
     </con:config>
   </con:testStep>
@@ -36,12 +54,12 @@
         <con:settings>
           <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
         </con:settings>
-        <con:endpoint>http://api.irishrail.ie</con:endpoint>
+        <con:endpoint>http://localhost:8088/</con:endpoint>
         <con:request/>
         <con:originalUri>http://api.irishrail.ie/realtime/realtime.asmx/getStationDataByNameXML</con:originalUri>
-        <con:assertion id="29462b71-b243-4fa5-af76-1d3509f25db0" name="Response SLA" type="Response SLA Assertion">
+        <con:assertion type="Response SLA Assertion" id="50bbce61-2b00-4b81-87f8-6c3d5895a60b" name="Response SLA">
           <con:configuration>
-            <SLA>500</SLA>
+            <SLA>300</SLA>
           </con:configuration>
         </con:assertion>
         <con:credentials>
@@ -55,6 +73,11 @@
         <con:parameterOrder>
           <con:entry>StationDesc</con:entry>
         </con:parameterOrder>
+        <con:environmentSpec>
+          <con:entry environmentId="5bde98c7-81ae-4e7e-8f4e-ccec22a65cbf">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
       </con:restRequest>
     </con:config>
   </con:testStep>
@@ -89,6 +112,11 @@
         <con:parameterOrder>
           <con:entry>StationDesc</con:entry>
         </con:parameterOrder>
+        <con:environmentSpec>
+          <con:entry environmentId="5bde98c7-81ae-4e7e-8f4e-ccec22a65cbf">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
       </con:restRequest>
     </con:config>
   </con:testStep>
@@ -123,6 +151,11 @@
         <con:parameterOrder>
           <con:entry>StationDesc</con:entry>
         </con:parameterOrder>
+        <con:environmentSpec>
+          <con:entry environmentId="5bde98c7-81ae-4e7e-8f4e-ccec22a65cbf">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
       </con:restRequest>
     </con:config>
   </con:testStep>
@@ -157,6 +190,11 @@
         <con:parameterOrder>
           <con:entry>StationDesc</con:entry>
         </con:parameterOrder>
+        <con:environmentSpec>
+          <con:entry environmentId="5bde98c7-81ae-4e7e-8f4e-ccec22a65cbf">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
       </con:restRequest>
     </con:config>
   </con:testStep>
@@ -191,7 +229,20 @@
         <con:parameterOrder>
           <con:entry>StationDesc</con:entry>
         </con:parameterOrder>
+        <con:environmentSpec>
+          <con:entry environmentId="5bde98c7-81ae-4e7e-8f4e-ccec22a65cbf">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
       </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="datasourceloop" name="Data Source Loop" id="fd6a5c9a-335d-4b20-9ac2-7cb9fdd44cc3" disabled="true">
+    <con:settings/>
+    <con:config>
+      <dataSourceStep>Data Source</dataSourceStep>
+      <targetStep>Request Stations</targetStep>
+      <discardResults>true</discardResults>
     </con:config>
   </con:testStep>
   <con:properties/>
@@ -201,4 +252,9 @@
     <con:status>NONE</con:status>
     <con:properties/>
   </con:breakPoints>
+  <con:environmentSpec>
+    <con:entry environmentId="5bde98c7-81ae-4e7e-8f4e-ccec22a65cbf">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
 </con:testCase>

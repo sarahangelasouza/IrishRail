@@ -21,13 +21,13 @@
       <con1:property propagates="true" key="ModelItem.reportFolder" type="java.lang.String"/>
       <con1:property propagates="true" key="ModelItem.reportFormat" type="java.lang.String"/>
       <con1:property propagates="true" key="Temporary project" type="java.lang.String"/>
-      <con1:property propagates="true" key="ModelItem.rate" type="java.lang.Long">10</con1:property>
+      <con1:property propagates="true" key="ModelItem.rate" type="java.lang.Long">20</con1:property>
       <con1:property propagates="true" key="ModelItem.loadDistributionType" type="com.smartbear.load.facade.LoadDistributionType">PerScenario</con1:property>
-      <con1:property propagates="true" key="ModelItem.remoteMode" type="java.lang.String"/>
+      <con1:property propagates="true" key="ModelItem.remoteMode" type="java.lang.String">LOCAL</con1:property>
       <con1:property propagates="true" key="ModelItem.id" type="java.lang.String">2c7554cc-5990-455d-a710-d44d23a76085</con1:property>
     </con1:properties>
     <con1:attributes>
-      <con1:property key="limits">Time=30;</con1:property>
+      <con1:property key="limits">Time=20;</con1:property>
     </con1:attributes>
     <con1:addons>
       <con1:addon type="com.eviware.loadui.pro.api.monitoring.ServerAddon" id="d9ce417f-912f-46e5-95ee-fadba27a093b">
@@ -57,12 +57,12 @@
         <con1:property propagates="true" key="ModelItem.description" type="java.lang.String"/>
         <con1:property propagates="true" key="CanvasItem.abortOnFinish" type="java.lang.Boolean">true</con1:property>
         <con1:property propagates="true" key="SceneItem.followProject" type="java.lang.Boolean">true</con1:property>
-        <con1:property propagates="true" key="SceneItem.scenarioRatePercentage" type="java.lang.Long">100</con1:property>
+        <con1:property propagates="true" key="SceneItem.scenarioRatePercentage" type="java.lang.Long">50</con1:property>
         <con1:property propagates="true" key="SceneItem.scenarioRateSpecific" type="java.lang.Long">10</con1:property>
         <con1:property propagates="true" key="ModelItem.samplerOutputLevel" type="com.eviware.loadui.api.component.SoapUISamplerOutputLevel">TestCaseAndAllTestSteps</con1:property>
       </con1:properties>
       <con1:attributes>
-        <con1:property key="limits">Time=30;</con1:property>
+        <con1:property key="limits">Time=20;</con1:property>
       </con1:attributes>
       <con1:addons>
         <con1:addon type="com.eviware.loadui.api.assertion.AssertionAddon" id="26ca57bd-0a92-4988-9d0e-f26d907729d7">
@@ -89,6 +89,18 @@
           </con1:attributes>
           <con1:addons/>
         </con1:addon>
+        <con1:addon type="com.eviware.loadui.api.assertion.AssertionAddon" id="4c5b0c21-a211-4921-9a96-1155765f3f65">
+          <con1:attributes>
+            <con1:property key="parentId">eebf3f9a-424f-4670-a98e-1eab1152b5f1</con1:property>
+            <con1:property key="valueReference">rO0ABXNyADdjb20uZXZpd2FyZS5sb2FkdWkudXRpbC5zZXJpYWxpemF0aW9uLlN0YXRpc3RpY1Jlc29sdmVyJwTr+w+xV3ECAARMAA1ob2xkZXJBZGRyZXNzdAASTGphdmEvbGFuZy9TdHJpbmc7TAAGc291cmNlcQB+AAFMAA1zdGF0aXN0aWNOYW1lcQB+AAFMAAx2YXJpYWJsZU5hbWVxAH4AAXhwdAAkZWViZjNmOWEtNDI0Zi00NjcwLWE5OGUtMWVhYjExNTJiNWYxdAAEbWFpbnQABk1FRElBTnQAClRpbWUgVGFrZW4=</con1:property>
+            <con1:property key="Labeled@label">Time Taken - median</con1:property>
+            <con1:property key="constraint">rO0ABXNyADFjb20uZXZpd2FyZS5sb2FkdWkudXRpbC5hc3NlcnRpb24uUmFuZ2VDb25zdHJhaW50Y94NW62dOawCAAJEAANtYXhEAANtaW54cEB8IAAAAAAAAAAAAAAAAAA=</con1:property>
+            <con1:property key="tolerancePeriod">30000</con1:property>
+            <con1:property key="toleranceAllowedOccurrences">1</con1:property>
+            <con1:property key="stopTestOnFailure">false</con1:property>
+          </con1:attributes>
+          <con1:addons/>
+        </con1:addon>
       </con1:addons>
       <con1:component type="com.eviware.loadui.impl.component.IntervalComponent" label="Interval 1" id="d2049cb8-de22-41a7-8f5c-779b9228ee91" category="Scheduler">
         <con1:properties>
@@ -110,7 +122,7 @@
           <con1:property propagates="true" key="ModelItem.description" type="java.lang.String"/>
           <con1:property propagates="true" key="stateProperty" type="java.lang.Boolean">false</con1:property>
           <con1:property propagates="true" key="limitVU" type="java.lang.Long">100</con1:property>
-          <con1:property propagates="true" key="load" type="java.lang.Long">5</con1:property>
+          <con1:property propagates="true" key="load" type="java.lang.Long">10</con1:property>
           <con1:property propagates="true" key="interval" type="java.lang.Long">1000</con1:property>
         </con1:properties>
         <con1:attributes>
@@ -152,8 +164,8 @@
 //
 // Uncomment the line below to log all the transactions whose responses contain 'CAPTCHA'.
 //soapui_context.response.contains('CAPTCHA')</con1:property>
-          <con1:property propagates="true" key="valueName" type="java.lang.String">Test step status</con1:property>
-          <con1:property propagates="true" key="max" type="java.lang.Long">0</con1:property>
+          <con1:property propagates="true" key="valueName" type="java.lang.String">TimeTaken</con1:property>
+          <con1:property propagates="true" key="max" type="java.lang.Long">60000</con1:property>
           <con1:property propagates="true" key="min" type="java.lang.Long">0</con1:property>
           <con1:property propagates="true" key="enabled" type="java.lang.Boolean">true</con1:property>
         </con1:properties>
@@ -191,12 +203,12 @@
         <con1:property propagates="true" key="ModelItem.description" type="java.lang.String"/>
         <con1:property propagates="true" key="CanvasItem.abortOnFinish" type="java.lang.Boolean">true</con1:property>
         <con1:property propagates="true" key="SceneItem.followProject" type="java.lang.Boolean">true</con1:property>
-        <con1:property propagates="true" key="SceneItem.scenarioRatePercentage" type="java.lang.Long">100</con1:property>
+        <con1:property propagates="true" key="SceneItem.scenarioRatePercentage" type="java.lang.Long">30</con1:property>
         <con1:property propagates="true" key="SceneItem.scenarioRateSpecific" type="java.lang.Long">10</con1:property>
         <con1:property propagates="true" key="ModelItem.samplerOutputLevel" type="com.eviware.loadui.api.component.SoapUISamplerOutputLevel">TestCaseAndAllTestSteps</con1:property>
       </con1:properties>
       <con1:attributes>
-        <con1:property key="limits">Time=30;</con1:property>
+        <con1:property key="limits">Time=20;</con1:property>
       </con1:attributes>
       <con1:addons>
         <con1:addon type="com.eviware.loadui.api.assertion.AssertionAddon" id="a3b9fde9-ff39-441a-8d4b-3fdf0049fc5f">
@@ -308,50 +320,6 @@
         </con1:attributes>
         <con1:addons/>
       </con1:component>
-      <con1:component type="com.eviware.loadui.impl.component.flowControls.ConditionComponent" label="Condition 2" id="9579e141-d4cc-49e0-bd46-b8ae077c758f" category="Flow">
-        <con1:properties>
-          <con1:property propagates="true" key="ModelItem.description" type="java.lang.String"/>
-          <con1:property propagates="true" key="advancedMode" type="java.lang.Boolean">false</con1:property>
-          <con1:property propagates="true" key="reverseCondition" type="java.lang.Boolean">false</con1:property>
-          <con1:property propagates="true" key="condition" type="java.lang.String">// The script must return true to log transaction data and false if you do not want to log this data.
-//
-// Uncomment the line below to log all the transactions whose responses do not have the status code 200 (OK) or whose size is zero.
-//soapui_context.statusCode != 200 || soapui_context.responseSize == 0
-//
-// Uncomment the line below to log all the transactions whose responses contain 'CAPTCHA'.
-//soapui_context.response.contains('CAPTCHA')</con1:property>
-          <con1:property propagates="true" key="valueName" type="java.lang.String">Test step status</con1:property>
-          <con1:property propagates="true" key="max" type="java.lang.Long">0</con1:property>
-          <con1:property propagates="true" key="min" type="java.lang.Long">0</con1:property>
-          <con1:property propagates="true" key="enabled" type="java.lang.Boolean">true</con1:property>
-        </con1:properties>
-        <con1:attributes>
-          <con1:property key="com.eviware.loadui.api.model.ComponentItem@type">Condition</con1:property>
-        </con1:attributes>
-        <con1:addons/>
-      </con1:component>
-      <con1:component type="com.eviware.loadui.impl.component.flowControls.ConditionComponent" label="Condition 3" id="38e109c3-3aa0-4688-888f-7bf728a9e3a3" category="Flow">
-        <con1:properties>
-          <con1:property propagates="true" key="ModelItem.description" type="java.lang.String"/>
-          <con1:property propagates="true" key="advancedMode" type="java.lang.Boolean">false</con1:property>
-          <con1:property propagates="true" key="reverseCondition" type="java.lang.Boolean">false</con1:property>
-          <con1:property propagates="true" key="condition" type="java.lang.String">// The script must return true to log transaction data and false if you do not want to log this data.
-//
-// Uncomment the line below to log all the transactions whose responses do not have the status code 200 (OK) or whose size is zero.
-//soapui_context.statusCode != 200 || soapui_context.responseSize == 0
-//
-// Uncomment the line below to log all the transactions whose responses contain 'CAPTCHA'.
-//soapui_context.response.contains('CAPTCHA')</con1:property>
-          <con1:property propagates="true" key="valueName" type="java.lang.String">Test step status</con1:property>
-          <con1:property propagates="true" key="max" type="java.lang.Long">0</con1:property>
-          <con1:property propagates="true" key="min" type="java.lang.Long">0</con1:property>
-          <con1:property propagates="true" key="enabled" type="java.lang.Boolean">true</con1:property>
-        </con1:properties>
-        <con1:attributes>
-          <con1:property key="com.eviware.loadui.api.model.ComponentItem@type">Condition</con1:property>
-        </con1:attributes>
-        <con1:addons/>
-      </con1:component>
       <con1:component type="com.eviware.loadui.impl.component.flowControls.ConditionComponent" label="Condition 4" id="067655d0-3f14-4ada-9d0c-6cfb1280ff5e" category="Flow">
         <con1:properties>
           <con1:property propagates="true" key="ModelItem.description" type="java.lang.String"/>
@@ -397,11 +365,7 @@
       <con1:connection outputTerminalId="b35f8086-a097-4930-987f-b89fe596d173/outgoingTerminal" inputTerminalId="a3f56c5d-928f-433a-b891-9a7f66feea20/stateTerminal"/>
       <con1:connection outputTerminalId="a3f56c5d-928f-433a-b891-9a7f66feea20/triggerTerminal" inputTerminalId="805a1197-6128-49a3-b49c-2cf5970447d8/triggerTerminal"/>
       <con1:connection outputTerminalId="7af8debe-0943-4ee3-b37e-9cd771614546/runningTerminal" inputTerminalId="a3f56c5d-928f-433a-b891-9a7f66feea20/Sample Count"/>
-      <con1:connection outputTerminalId="805a1197-6128-49a3-b49c-2cf5970447d8/resultTerminal" inputTerminalId="9579e141-d4cc-49e0-bd46-b8ae077c758f/incomingTerminal"/>
-      <con1:connection outputTerminalId="0316e133-5c06-4f2a-9f32-69f63c89d2f4/resultTerminal" inputTerminalId="38e109c3-3aa0-4688-888f-7bf728a9e3a3/incomingTerminal"/>
       <con1:connection outputTerminalId="7af8debe-0943-4ee3-b37e-9cd771614546/resultTerminal" inputTerminalId="067655d0-3f14-4ada-9d0c-6cfb1280ff5e/incomingTerminal"/>
-      <con1:connection outputTerminalId="9579e141-d4cc-49e0-bd46-b8ae077c758f/trueOutput" inputTerminalId="62460110-274a-4656-ab5c-8295dfccaf4f/inputTerminal"/>
-      <con1:connection outputTerminalId="38e109c3-3aa0-4688-888f-7bf728a9e3a3/trueOutput" inputTerminalId="62460110-274a-4656-ab5c-8295dfccaf4f/inputTerminal"/>
       <con1:connection outputTerminalId="067655d0-3f14-4ada-9d0c-6cfb1280ff5e/trueOutput" inputTerminalId="62460110-274a-4656-ab5c-8295dfccaf4f/inputTerminal"/>
     </con1:scene>
     <con1:scene label="Peak Test - Five Stations" id="0e26427b-506a-4b13-998d-fc53d701d8e1">
@@ -409,12 +373,12 @@
         <con1:property propagates="true" key="ModelItem.description" type="java.lang.String"/>
         <con1:property propagates="true" key="CanvasItem.abortOnFinish" type="java.lang.Boolean">true</con1:property>
         <con1:property propagates="true" key="SceneItem.followProject" type="java.lang.Boolean">true</con1:property>
-        <con1:property propagates="true" key="SceneItem.scenarioRatePercentage" type="java.lang.Long">100</con1:property>
-        <con1:property propagates="true" key="SceneItem.scenarioRateSpecific" type="java.lang.Long">10</con1:property>
+        <con1:property propagates="true" key="SceneItem.scenarioRatePercentage" type="java.lang.Long">20</con1:property>
+        <con1:property propagates="true" key="SceneItem.scenarioRateSpecific" type="java.lang.Long">20</con1:property>
         <con1:property propagates="true" key="ModelItem.samplerOutputLevel" type="com.eviware.loadui.api.component.SoapUISamplerOutputLevel">TestCaseAndAllTestSteps</con1:property>
       </con1:properties>
       <con1:attributes>
-        <con1:property key="limits">Time=30;</con1:property>
+        <con1:property key="limits">Time=20;</con1:property>
       </con1:attributes>
       <con1:addons>
         <con1:addon type="com.eviware.loadui.api.assertion.AssertionAddon" id="2f70f771-0139-4c44-85d8-f68fdd90e8bd">
@@ -435,7 +399,7 @@
           <con1:property propagates="true" key="ModelItem.description" type="java.lang.String"/>
           <con1:property propagates="true" key="stateProperty" type="java.lang.Boolean">true</con1:property>
           <con1:property propagates="true" key="startAt" type="java.lang.Long">6</con1:property>
-          <con1:property propagates="true" key="duration" type="java.lang.Long">14</con1:property>
+          <con1:property propagates="true" key="duration" type="java.lang.Long">9</con1:property>
           <con1:property propagates="true" key="unit" type="java.lang.String">Sec</con1:property>
           <con1:property propagates="true" key="mode" type="java.lang.String">Single</con1:property>
           <con1:property propagates="true" key="defaultMode" type="java.lang.Boolean">false</con1:property>
@@ -473,7 +437,7 @@
           <con1:property propagates="true" key="stateProperty" type="java.lang.Boolean">false</con1:property>
           <con1:property propagates="true" key="limitVU" type="java.lang.Long">100</con1:property>
           <con1:property propagates="true" key="baseVU" type="java.lang.Long">5</con1:property>
-          <con1:property propagates="true" key="peakVU" type="java.lang.Long">10</con1:property>
+          <con1:property propagates="true" key="peakVU" type="java.lang.Long">20</con1:property>
           <con1:property propagates="true" key="rampUpDuration" type="java.lang.Long">10</con1:property>
           <con1:property propagates="true" key="rampDownDuration" type="java.lang.Long">10</con1:property>
           <con1:property propagates="true" key="peakDuration" type="java.lang.Long">10</con1:property>
@@ -533,6 +497,18 @@
     <con1:sceneAssignment sceneRef="eebf3f9a-424f-4670-a98e-1eab1152b5f1" agentRef="77cd635a-968b-49d2-9922-7d4af133cea0" agentLabel="My Agent" agentAddress="http://127.0.0.1:1991/" enabled="true"/>
     <con1:sceneAssignment sceneRef="5354a2ef-49cc-46e7-b7fb-5dae33a6ebef" agentRef="77cd635a-968b-49d2-9922-7d4af133cea0" agentLabel="My Agent" agentAddress="http://127.0.0.1:1991/" enabled="true"/>
     <con1:sceneAssignment sceneRef="0e26427b-506a-4b13-998d-fc53d701d8e1" agentRef="77cd635a-968b-49d2-9922-7d4af133cea0" agentLabel="My Agent" agentAddress="http://127.0.0.1:1991/" enabled="true"/>
+    <con1:sceneAssignment sceneRef="5354a2ef-49cc-46e7-b7fb-5dae33a6ebef" agentRef="aa350d3a-a950-42b8-a211-645bb8911597" agentLabel="My Agent 2" agentAddress="http://127.0.0.2:1991/" enabled="true"/>
+    <con1:sceneAssignment sceneRef="0e26427b-506a-4b13-998d-fc53d701d8e1" agentRef="aa350d3a-a950-42b8-a211-645bb8911597" agentLabel="My Agent 2" agentAddress="http://127.0.0.2:1991/" enabled="true"/>
+    <con1:sceneAssignment sceneRef="5354a2ef-49cc-46e7-b7fb-5dae33a6ebef" agentRef="0bc8dd09-74b1-4c90-b98f-c56817bd1942" agentLabel="My Agent 2" agentAddress="http://127.0.0.2:1991/" enabled="true"/>
+    <con1:sceneAssignment sceneRef="0e26427b-506a-4b13-998d-fc53d701d8e1" agentRef="0bc8dd09-74b1-4c90-b98f-c56817bd1942" agentLabel="My Agent 2" agentAddress="http://127.0.0.2:1991/" enabled="true"/>
+    <con1:sceneAssignment sceneRef="5354a2ef-49cc-46e7-b7fb-5dae33a6ebef" agentRef="4745da0c-e456-4dae-9199-c4dd95c6ae1b" agentLabel="My Agent 2" agentAddress="http://127.0.0.2:1991/" enabled="true"/>
+    <con1:sceneAssignment sceneRef="0e26427b-506a-4b13-998d-fc53d701d8e1" agentRef="4745da0c-e456-4dae-9199-c4dd95c6ae1b" agentLabel="My Agent 2" agentAddress="http://127.0.0.2:1991/" enabled="true"/>
+    <con1:sceneAssignment sceneRef="eebf3f9a-424f-4670-a98e-1eab1152b5f1" agentRef="50718733-9a6b-4437-afb5-6410fce12ac5" agentLabel="My Agent 2" agentAddress="http://127.0.0.2:1991/" enabled="true"/>
+    <con1:sceneAssignment sceneRef="5354a2ef-49cc-46e7-b7fb-5dae33a6ebef" agentRef="50718733-9a6b-4437-afb5-6410fce12ac5" agentLabel="My Agent 2" agentAddress="http://127.0.0.2:1991/" enabled="true"/>
+    <con1:sceneAssignment sceneRef="0e26427b-506a-4b13-998d-fc53d701d8e1" agentRef="50718733-9a6b-4437-afb5-6410fce12ac5" agentLabel="My Agent 2" agentAddress="http://127.0.0.2:1991/" enabled="true"/>
+    <con1:sceneAssignment sceneRef="eebf3f9a-424f-4670-a98e-1eab1152b5f1" agentRef="a032a5f8-2abd-4c70-aab0-82a3bbfb2c7e" agentLabel="My Agent 3" agentAddress="http://127.0.0.3:1991/" enabled="true"/>
+    <con1:sceneAssignment sceneRef="5354a2ef-49cc-46e7-b7fb-5dae33a6ebef" agentRef="a032a5f8-2abd-4c70-aab0-82a3bbfb2c7e" agentLabel="My Agent 3" agentAddress="http://127.0.0.3:1991/" enabled="true"/>
+    <con1:sceneAssignment sceneRef="0e26427b-506a-4b13-998d-fc53d701d8e1" agentRef="a032a5f8-2abd-4c70-aab0-82a3bbfb2c7e" agentLabel="My Agent 3" agentAddress="http://127.0.0.3:1991/" enabled="true"/>
     <con1:statistics>
       <con1:page title="DefaultLoadUIStatisticPage">
         <con1:chartGroup type="com.eviware.loadui.api.statistics.model.chart.line.LineChartView" title="" groupType="Monitors">
@@ -545,7 +521,7 @@
             <con1:property key="GroupId">84d419a6-4b10-4b61-afc8-4054b6467a6b</con1:property>
           </con1:attributes>
         </con1:chartGroup>
-        <con1:chartGroup type="com.eviware.loadui.api.statistics.model.chart.line.LineChartView" title="New Statistics Group" groupType="Graph">
+        <con1:chartGroup type="com.eviware.loadui.api.statistics.model.chart.line.LineChartView" title="Failures" groupType="Graph">
           <con1:chart statisticHolder="341546b6-08ef-4109-82ee-83db4408a10a">
             <con1:attributes>
               <con1:property key="_CHART_segments">68:36:341546b6-08ef-4109-82ee-83db4408a10a8:Failures10:PER_SECOND4:main75:36:341546b6-08ef-4109-82ee-83db4408a10a14:Test case runs10:PER_SECOND4:main62:36:341546b6-08ef-4109-82ee-83db4408a10a8:Failures5:TOTAL4:main72:36:341546b6-08ef-4109-82ee-83db4408a10a17:Failed Test Steps5:TOTAL4:main78:36:341546b6-08ef-4109-82ee-83db4408a10a17:Failed Test Steps10:PER_SECOND4:main</con1:property>
@@ -555,7 +531,7 @@
             <con1:property key="GroupId">b9d7c8e5-653d-4acc-8e9c-cb12d5780a60</con1:property>
           </con1:attributes>
         </con1:chartGroup>
-        <con1:chartGroup type="com.eviware.loadui.api.statistics.model.chart.line.LineChartView" title="New Statistics Group 1" groupType="Graph">
+        <con1:chartGroup type="com.eviware.loadui.api.statistics.model.chart.line.LineChartView" title="Server Memory and Time Metrics" groupType="Graph">
           <con1:chart statisticHolder="341546b6-08ef-4109-82ee-83db4408a10a">
             <con1:attributes>
               <con1:property key="_CHART_segments">68:36:341546b6-08ef-4109-82ee-83db4408a10a8:Failures10:PER_SECOND4:main75:36:341546b6-08ef-4109-82ee-83db4408a10a14:Test case runs10:PER_SECOND4:main63:36:341546b6-08ef-4109-82ee-83db4408a10a10:Time Taken3:MAX4:main63:36:341546b6-08ef-4109-82ee-83db4408a10a10:Time Taken3:MIN4:main67:36:341546b6-08ef-4109-82ee-83db4408a10a10:Time Taken7:AVERAGE4:main66:36:341546b6-08ef-4109-82ee-83db4408a10a10:Time Taken6:MEDIAN4:main67:36:341546b6-08ef-4109-82ee-83db4408a10a10:Time Taken7:STD_DEV4:main</con1:property>
@@ -572,7 +548,23 @@
         </con1:chartGroup>
       </con1:page>
     </con1:statistics>
-    <con1:agent url="http://127.0.0.1:1991/" label="My Agent" id="77cd635a-968b-49d2-9922-7d4af133cea0">
+    <con1:agent url="http://127.0.0.1:1991/" label="Mobile Scenario" id="77cd635a-968b-49d2-9922-7d4af133cea0">
+      <con1:properties>
+        <con1:property propagates="true" key="ModelItem.description" type="java.lang.String"/>
+        <con1:property propagates="true" key="AgentItem.maxThreads" type="java.lang.Long">1000</con1:property>
+      </con1:properties>
+      <con1:attributes/>
+      <con1:addons/>
+    </con1:agent>
+    <con1:agent url="http://127.0.0.2:1991/" label="Web Scenario" id="50718733-9a6b-4437-afb5-6410fce12ac5">
+      <con1:properties>
+        <con1:property propagates="true" key="ModelItem.description" type="java.lang.String"/>
+        <con1:property propagates="true" key="AgentItem.maxThreads" type="java.lang.Long">1000</con1:property>
+      </con1:properties>
+      <con1:attributes/>
+      <con1:addons/>
+    </con1:agent>
+    <con1:agent url="http://127.0.0.3:1991/" label="My Agent 3" id="a032a5f8-2abd-4c70-aab0-82a3bbfb2c7e">
       <con1:properties>
         <con1:property propagates="true" key="ModelItem.description" type="java.lang.String"/>
         <con1:property propagates="true" key="AgentItem.maxThreads" type="java.lang.Long">1000</con1:property>
@@ -595,5 +587,10 @@
   </con:loadUIPanelData>
   <con:statistics id="b9d7c8e5-653d-4acc-8e9c-cb12d5780a60"/>
   <con:statistics id="cfa6e84a-f834-4e19-aea9-5542bbd5c303"/>
-  <con:reportParameters/>
+  <con:reportParameters>
+    <con:property>
+      <con:name>city_prop</con:name>
+      <con:value/>
+    </con:property>
+  </con:reportParameters>
 </con:loadUiTest>

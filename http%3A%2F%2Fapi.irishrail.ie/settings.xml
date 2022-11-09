@@ -3,9 +3,14 @@
   <con:settings>
     <con:setting id="fcab9045-c83c-43f0-b7bc-182071bd580dfileName">http%3A%2F%2Fapi.irishrail.ie</con:setting>
   </con:settings>
-  <con:definitionCache rootPart="" type="TEXT"/>
+  <con:definitionCache type="TEXT"/>
   <con:endpoints>
     <con:endpoint>http://api.irishrail.ie</con:endpoint>
     <con:endpoint>http://localhost:8088/</con:endpoint>
   </con:endpoints>
+  <con:environmentSpec>
+    <con:entry environmentId="5bde98c7-81ae-4e7e-8f4e-ccec22a65cbf">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
 </con:interface>
