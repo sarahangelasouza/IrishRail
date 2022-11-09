@@ -30,9 +30,7 @@
           <con:authType>No Authorization</con:authType>
         </con:credentials>
         <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
-        <con:parameters>
-          <con:entry key="StationDesc" value=""/>
-        </con:parameters>
+        <con:parameters/>
         <con:parameterOrder>
           <con:entry>StationDesc</con:entry>
         </con:parameterOrder>
