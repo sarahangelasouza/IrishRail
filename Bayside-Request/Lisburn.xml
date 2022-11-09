@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:testCase discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" id="b8910e2f-757b-47f2-ba27-ee626785750b" keepSession="false" name="Belfast" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
+<con:testCase discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" id="f8f014b4-52ff-4969-b8ef-e1a7f73441b1" keepSession="false" name="Lisburn" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
-    <con:setting id="b8910e2f-757b-47f2-ba27-ee626785750bfileName">Belfast</con:setting>
+    <con:setting id="f8f014b4-52ff-4969-b8ef-e1a7f73441b1fileName">Lisburn</con:setting>
   </con:settings>
   <con:savedRecentRuns>1</con:savedRecentRuns>
-  <con:testStep id="c64addff-3e5a-4703-9acd-cfec3acf9c7f" name="Request 1" type="restrequest">
+  <con:testStep id="aedd62e4-155f-490b-9b67-698e409a79b4" name="Request 1" type="restrequest">
     <con:settings/>
     <con:config xsi:type="con:RestRequestStep" methodName="GetStationDataByNameXML" resourcePath="/realtime/realtime.asmx/getStationDataByNameXML" service="http://api.irishrail.ie" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <con:restRequest id="7aa63b79-0e06-48ff-b5a2-6e242b56337d" mediaType="application/json" name="Request 1">
@@ -31,7 +31,7 @@
         </con:credentials>
         <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters>
-          <con:entry key="StationDesc" value="Belfast"/>
+          <con:entry key="StationDesc" value="Lisburn"/>
         </con:parameters>
         <con:parameterOrder>
           <con:entry>StationDesc</con:entry>

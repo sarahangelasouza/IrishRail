@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource name="Weather" path="/data/2.5/weather" id="542efcd9-7ff8-4523-bad5-30138ad16c05" xmlns:con="http://eviware.com/soapui/config">
+<con:resource name="Weather" path="/data/2.5/weather" id="542efcd9-7ff8-4523-bad5-30138ad16c05" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="542efcd9-7ff8-4523-bad5-30138ad16c05fileName">Weather</con:setting>
   </con:settings>
@@ -12,24 +12,24 @@
         <con:value>Boston</con:value>
         <con:style>QUERY</con:style>
         <con:default>Boston</con:default>
-        <con:path xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-        <con:description xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
       </con:parameter>
       <con:parameter required="true">
         <con:name>appid</con:name>
         <con:value>85c705dd76051cb3d8e5540b300279d4</con:value>
         <con:style>QUERY</con:style>
         <con:default>85c705dd76051cb3d8e5540b300279d4</con:default>
-        <con:path xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-        <con:description xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
       </con:parameter>
       <con:parameter required="true">
         <con:name>units</con:name>
         <con:value>metric</con:value>
         <con:style>QUERY</con:style>
         <con:default>metric</con:default>
-        <con:path xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
-        <con:description xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+        <con:path xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
       </con:parameter>
     </con:parameters>
     <con:request name="Request 1" id="a2ba6de5-0852-4d37-9b1f-cdd8e60195df" mediaType="application/json">
@@ -37,6 +37,7 @@
       <con:endpoint>http://api.openweathermap.org</con:endpoint>
       <con:request/>
       <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
         <con:authType>No Authorization</con:authType>
       </con:credentials>
       <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>

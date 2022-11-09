@@ -117,19 +117,6 @@
         </con1:attributes>
         <con1:addons/>
       </con1:component>
-      <con1:component type="com.eviware.loadui.impl.component.generators.FixedVU" label="Fixed Load 1" id="9448f3b2-3d96-4129-a80e-b1d95db9d7c8" category="Generators">
-        <con1:properties>
-          <con1:property propagates="true" key="ModelItem.description" type="java.lang.String"/>
-          <con1:property propagates="true" key="stateProperty" type="java.lang.Boolean">false</con1:property>
-          <con1:property propagates="true" key="limitVU" type="java.lang.Long">100</con1:property>
-          <con1:property propagates="true" key="load" type="java.lang.Long">10</con1:property>
-          <con1:property propagates="true" key="interval" type="java.lang.Long">1000</con1:property>
-        </con1:properties>
-        <con1:attributes>
-          <con1:property key="com.eviware.loadui.api.model.ComponentItem@type">Fixed Load</con1:property>
-        </con1:attributes>
-        <con1:addons/>
-      </con1:component>
       <con1:component type="com.eviware.loadui.components.soapui.SoapUISamplerComponent" label="http://api.irishrail.ie Test Suite:GetAllStations" id="1b2bc301-9526-4f01-b258-b9635fb5f124" category="Runners">
         <con1:properties>
           <con1:property propagates="true" key="ModelItem.description" type="java.lang.String"/>
@@ -192,11 +179,25 @@
         </con1:attributes>
         <con1:addons/>
       </con1:component>
-      <con1:connection outputTerminalId="d2049cb8-de22-41a7-8f5c-779b9228ee91/outgoingTerminal" inputTerminalId="9448f3b2-3d96-4129-a80e-b1d95db9d7c8/stateTerminal"/>
-      <con1:connection outputTerminalId="9448f3b2-3d96-4129-a80e-b1d95db9d7c8/triggerTerminal" inputTerminalId="1b2bc301-9526-4f01-b258-b9635fb5f124/triggerTerminal"/>
-      <con1:connection outputTerminalId="1b2bc301-9526-4f01-b258-b9635fb5f124/runningTerminal" inputTerminalId="9448f3b2-3d96-4129-a80e-b1d95db9d7c8/Sample Count"/>
+      <con1:component type="com.eviware.loadui.impl.component.generators.CustomVU" label="Custom (VU) 1" id="dbae5872-5262-43f3-8a52-d8d02ad2cd30" category="Generators">
+        <con1:properties>
+          <con1:property propagates="true" key="ModelItem.description" type="java.lang.String"/>
+          <con1:property propagates="true" key="stateProperty" type="java.lang.Boolean">false</con1:property>
+          <con1:property propagates="true" key="limitVU" type="java.lang.Long">100</con1:property>
+          <con1:property propagates="true" key="times" type="[J">3,24,32,44,53</con1:property>
+          <con1:property propagates="true" key="vus" type="[J">1,1,7,10,7</con1:property>
+          <con1:property propagates="true" key="waitTime" type="java.lang.Long">1000</con1:property>
+        </con1:properties>
+        <con1:attributes>
+          <con1:property key="com.eviware.loadui.api.model.ComponentItem@type">Custom (VU)</con1:property>
+        </con1:attributes>
+        <con1:addons/>
+      </con1:component>
       <con1:connection outputTerminalId="1b2bc301-9526-4f01-b258-b9635fb5f124/resultTerminal" inputTerminalId="4c90f088-da33-4da9-ad85-aa4b1f6c066e/incomingTerminal"/>
       <con1:connection outputTerminalId="4c90f088-da33-4da9-ad85-aa4b1f6c066e/trueOutput" inputTerminalId="6d8f1d4d-f0a7-47b9-94b1-3a43236cba07/inputTerminal"/>
+      <con1:connection outputTerminalId="d2049cb8-de22-41a7-8f5c-779b9228ee91/outgoingTerminal" inputTerminalId="dbae5872-5262-43f3-8a52-d8d02ad2cd30/stateTerminal"/>
+      <con1:connection outputTerminalId="dbae5872-5262-43f3-8a52-d8d02ad2cd30/triggerTerminal" inputTerminalId="1b2bc301-9526-4f01-b258-b9635fb5f124/triggerTerminal"/>
+      <con1:connection outputTerminalId="1b2bc301-9526-4f01-b258-b9635fb5f124/runningTerminal" inputTerminalId="dbae5872-5262-43f3-8a52-d8d02ad2cd30/Sample Count"/>
     </con1:scene>
     <con1:scene label="Repeating Queries" id="5354a2ef-49cc-46e7-b7fb-5dae33a6ebef">
       <con1:properties>
@@ -399,7 +400,7 @@
           <con1:property propagates="true" key="ModelItem.description" type="java.lang.String"/>
           <con1:property propagates="true" key="stateProperty" type="java.lang.Boolean">true</con1:property>
           <con1:property propagates="true" key="startAt" type="java.lang.Long">6</con1:property>
-          <con1:property propagates="true" key="duration" type="java.lang.Long">9</con1:property>
+          <con1:property propagates="true" key="duration" type="java.lang.Long">8</con1:property>
           <con1:property propagates="true" key="unit" type="java.lang.String">Sec</con1:property>
           <con1:property propagates="true" key="mode" type="java.lang.String">Single</con1:property>
           <con1:property propagates="true" key="defaultMode" type="java.lang.Boolean">false</con1:property>
