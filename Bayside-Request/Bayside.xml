@@ -31,7 +31,7 @@
         </con:credentials>
         <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
         <con:parameters>
-          <con:entry key="StationDesc" value="Bayside"/>
+          <con:entry key="StationDesc" value=""/>
         </con:parameters>
         <con:parameterOrder>
           <con:entry>StationDesc</con:entry>
