@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource id="de086a14-990f-4d1c-9a0f-8047510821d0" name="GetCurrentTrainsXML" path="/realtime/realtime.asmx/getCurrentTrainsXML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
-  <con:settings>
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" id="de086a14-990f-4d1c-9a0f-8047510821d0" name="GetCurrentTrainsXML" path="/realtime/realtime.asmx/getCurrentTrainsXML">
+  <con:settings id="eb6591b0-dd6e-47e9-9b85-c61c1287a3ed">
     <con:setting id="de086a14-990f-4d1c-9a0f-8047510821d0fileName">GetCurrentTrainsXML</con:setting>
   </con:settings>
   <con:parameters/>

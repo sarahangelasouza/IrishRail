@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource id="49e34e0c-6257-424d-9da2-dad6a15ab7f9" name="GetAllStationsXML_WithStationType" path="/realtime/realtime.asmx/getAllStationsXML_WithStationType" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
-  <con:settings>
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" id="49e34e0c-6257-424d-9da2-dad6a15ab7f9" name="GetAllStationsXML_WithStationType" path="/realtime/realtime.asmx/getAllStationsXML_WithStationType">
+  <con:settings id="ef43be6b-9abe-4b13-9a39-43ba4dd99cf4">
     <con:setting id="49e34e0c-6257-424d-9da2-dad6a15ab7f9fileName">GetAllStationsXML_WithStationType</con:setting>
   </con:settings>
   <con:parameters/>

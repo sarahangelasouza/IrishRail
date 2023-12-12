@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:testSuite id="3f60d3f5-d353-4172-881b-82e39e84522d" name="Bayside Request" xmlns:con="http://eviware.com/soapui/config">
-  <con:settings>
-    <con:setting id="3f60d3f5-d353-4172-881b-82e39e84522dfileName">Bayside-Request</con:setting>
+<con:testSuite xmlns:con="http://eviware.com/soapui/config" id="3f60d3f5-d353-4172-881b-82e39e84522d" name="Single Stations">
+  <con:settings id="98bc93bf-57ce-4e70-a285-b54e648729f3">
+    <con:setting id="3f60d3f5-d353-4172-881b-82e39e84522dfileName">Single-Stations</con:setting>
   </con:settings>
   <con:savedRecentRuns>1</con:savedRecentRuns>
   <con:runType>SEQUENTIAL</con:runType>
@@ -12,4 +12,5 @@
       <con:authProfile>Inherit From Parent</con:authProfile>
     </con:entry>
   </con:environmentSpec>
+  <con:tagId>ee4d4dab-d8c4-479f-9474-853eba747130</con:tagId>
 </con:testSuite>

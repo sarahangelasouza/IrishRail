@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase xmlns:con="http://eviware.com/soapui/config" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" id="f8f014b4-52ff-4969-b8ef-e1a7f73441b1" keepSession="false" name="Lisburn" searchProperties="true" timeout="0">
+  <con:settings id="f99cdee4-af08-4fe6-b7f2-6ef43e77f809">
+    <con:setting id="f8f014b4-52ff-4969-b8ef-e1a7f73441b1fileName">Lisburn</con:setting>
+  </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:testStep id="aedd62e4-155f-490b-9b67-698e409a79b4" name="Request 1" type="restrequest">
+    <con:settings/>
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:RestRequestStep" methodName="GetStationDataByNameXML" resourcePath="/realtime/realtime.asmx/getStationDataByNameXML" service="http://api.irishrail.ie">
+      <con:restRequest id="7aa63b79-0e06-48ff-b5a2-6e242b56337d" mediaType="application/json" name="Request 1">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>http://api.irishrail.ie</con:endpoint>
+        <con:request/>
+        <con:originalUri>http://api.irishrail.ie/realtime/realtime.asmx/getStationDataByNameXML</con:originalUri>
+        <con:assertion id="e2926012-7a11-4f1f-b4c9-0ebb21fd80b4" name="Valid HTTP Status Codes" type="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion id="aee90e11-d90a-411a-8ba3-1157d69ccb96" name="Response SLA" type="Response SLA Assertion">
+          <con:configuration>
+            <SLA>500</SLA>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:parameters>
+          <con:entry key="StationDesc" value="Lisburn"/>
+        </con:parameters>
+        <con:parameterOrder>
+          <con:entry>StationDesc</con:entry>
+        </con:parameterOrder>
+        <con:environmentSpec>
+          <con:entry environmentId="5bde98c7-81ae-4e7e-8f4e-ccec22a65cbf">
+            <con:authProfile>Inherit From Parent</con:authProfile>
+          </con:entry>
+        </con:environmentSpec>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+  <con:environmentSpec>
+    <con:entry environmentId="5bde98c7-81ae-4e7e-8f4e-ccec22a65cbf">
+      <con:authProfile>Inherit From Parent</con:authProfile>
+    </con:entry>
+  </con:environmentSpec>
+</con:testCase>

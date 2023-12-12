@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:interface xsi:type="con:RestService" id="f974eb20-3331-4c30-90b3-da8ef4f3939a" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://api.openweathermap.org" type="rest" xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <con:settings>
+<con:interface xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:RestService" id="f974eb20-3331-4c30-90b3-da8ef4f3939a" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://api.openweathermap.org" type="rest">
+  <con:settings id="8057046f-d6d8-4554-a9a2-af1b1d81a6fc">
     <con:setting id="f974eb20-3331-4c30-90b3-da8ef4f3939afileName">http%3A%2F%2Fapi.openweathermap.org</con:setting>
   </con:settings>
   <con:definitionCache/>

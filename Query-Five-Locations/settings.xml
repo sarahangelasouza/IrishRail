@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:testSuite id="83951f7e-b375-4b42-a76a-b0339706e44b" name="Query Five Locations" xmlns:con="http://eviware.com/soapui/config">
-  <con:settings>
+<con:testSuite xmlns:con="http://eviware.com/soapui/config" id="83951f7e-b375-4b42-a76a-b0339706e44b" name="Query Five Locations">
+  <con:settings id="9f491678-4e9b-4609-a843-fb3d3129b53c">
     <con:setting id="83951f7e-b375-4b42-a76a-b0339706e44bfileName">Query-Five-Locations</con:setting>
   </con:settings>
   <con:savedRecentRuns>1</con:savedRecentRuns>

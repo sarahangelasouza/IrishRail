@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource name="Weather" path="/data/2.5/weather" id="542efcd9-7ff8-4523-bad5-30138ad16c05" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
-  <con:settings>
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" name="Weather" path="/data/2.5/weather" id="542efcd9-7ff8-4523-bad5-30138ad16c05">
+  <con:settings id="ac384784-93c9-4fd0-97d8-b413a4ecdb5f">
     <con:setting id="542efcd9-7ff8-4523-bad5-30138ad16c05fileName">Weather</con:setting>
   </con:settings>
   <con:parameters/>

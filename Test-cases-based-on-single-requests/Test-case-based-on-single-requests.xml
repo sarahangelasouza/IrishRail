@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:testCase id="65cafb8d-379b-4254-9ba7-a8b223620627" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="Test case based on single requests" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
-  <con:settings>
+<con:testCase xmlns:con="http://eviware.com/soapui/config" id="65cafb8d-379b-4254-9ba7-a8b223620627" discardOkResults="false" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="Test case based on single requests" searchProperties="true" timeout="0">
+  <con:settings id="d609e5e1-6fc9-4ef8-bf0d-f96d257ebb45">
     <con:setting id="65cafb8d-379b-4254-9ba7-a8b223620627fileName">Test-case-based-on-single-requests</con:setting>
   </con:settings>
   <con:testStep type="restrequest" name="Request 1" id="40962537-281e-4665-bd26-bb60b2368199">
     <con:settings/>
-    <con:config service="http://api.openweathermap.org" resourcePath="/data/2.5/weather" methodName="Weather" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" service="http://api.openweathermap.org" resourcePath="/data/2.5/weather" methodName="Weather" xsi:type="con:RestRequestStep">
       <con:restRequest name="Request 1" id="a2ba6de5-0852-4d37-9b1f-cdd8e60195df" mediaType="application/json">
         <con:settings/>
         <con:endpoint>http://api.openweathermap.org</con:endpoint>
         <con:request/>
+        <con:originalUri>http://api.openweathermap.org/data/2.5/weather</con:originalUri>
         <con:credentials>
           <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
           <con:authType>No Authorization</con:authType>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:restMockAction id="dcb1e6ab-33c2-4d17-aefa-02db5e9e41df" method="GET" name="/realtime/realtime.asmx/getCurrentTrainsXML" resourcePath="/realtime/realtime.asmx/getCurrentTrainsXML" xmlns:con="http://eviware.com/soapui/config">
-  <con:settings>
+<con:restMockAction xmlns:con="http://eviware.com/soapui/config" id="dcb1e6ab-33c2-4d17-aefa-02db5e9e41df" method="GET" name="/realtime/realtime.asmx/getCurrentTrainsXML" resourcePath="/realtime/realtime.asmx/getCurrentTrainsXML">
+  <con:settings id="52972a98-5424-47da-9ea0-b87c1c12462e">
     <con:setting id="dcb1e6ab-33c2-4d17-aefa-02db5e9e41dffileName">%2Frealtime%2Frealtime.asmx%2FgetCurrentTrainsXML</con:setting>
   </con:settings>
   <con:dispatchStyle>SEQUENCE</con:dispatchStyle>

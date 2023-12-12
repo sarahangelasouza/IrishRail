@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:testSuite id="286f68b9-7b51-4443-b397-2e57c8d9b5bc" name="http://api.irishrail.ie Test Suite" xmlns:con="http://eviware.com/soapui/config">
-  <con:settings>
-    <con:setting id="286f68b9-7b51-4443-b397-2e57c8d9b5bcfileName">http%3A%2F%2Fapi.irishrail.ie-Test-Suite</con:setting>
+<con:testSuite xmlns:con="http://eviware.com/soapui/config" id="286f68b9-7b51-4443-b397-2e57c8d9b5bc" name="AllStations">
+  <con:settings id="69243f5b-a869-4d12-b23d-9f5eb6e80058">
+    <con:setting id="286f68b9-7b51-4443-b397-2e57c8d9b5bcfileName">AllStations</con:setting>
   </con:settings>
   <con:savedRecentRuns>1</con:savedRecentRuns>
   <con:runType>SEQUENTIAL</con:runType>

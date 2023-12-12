@@ -1,20 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:testCase discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" id="c8780b50-4d0e-4782-b2f6-2ce9da20c3ea" keepSession="false" name="Test Case 1" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
-  <con:settings>
+<con:testCase xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" discardOkResults="false" failOnError="false" failTestCaseOnErrors="false" id="c8780b50-4d0e-4782-b2f6-2ce9da20c3ea" keepSession="false" name="Test Case 1" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" zephyrTestName="" zephyrTestId="">
+  <con:settings id="b96d4c56-4b26-4651-a926-fbdfd7cc83bb">
     <con:setting id="c8780b50-4d0e-4782-b2f6-2ce9da20c3eafileName">Test-Case-1</con:setting>
   </con:settings>
   <con:savedRecentRuns>1</con:savedRecentRuns>
-  <con:testStep type="datasource" name="Data Source" id="01629c77-0242-4986-b469-994dcf64ce38" disabled="true">
-    <con:settings/>
-    <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-      <con:shared>true</con:shared>
-      <con:restartShared>true</con:restartShared>
-      <con:restartOnRun>true</con:restartOnRun>
-    </con:config>
-  </con:testStep>
   <con:testStep id="5d820b5e-c2f7-4d84-b3d7-27b2b0c55ecd" name="Request Stations" type="restrequest">
     <con:settings/>
-    <con:config xsi:type="con:RestRequestStep" methodName="GetAllStationsXML" resourcePath="/realtime/realtime.asmx/getAllStationsXML" service="http://api.irishrail.ie" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:config xsi:type="con:RestRequestStep" methodName="GetAllStationsXML" resourcePath="/realtime/realtime.asmx/getAllStationsXML" service="http://api.irishrail.ie">
       <con:restRequest id="ed931a6f-aa7f-4420-a291-0971a65505d0" mediaType="application/json" name="Request Stations">
         <con:settings>
           <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
@@ -30,7 +22,7 @@
         </con:assertion>
         <con:assertion type="Response SLA Assertion" id="f7bda40b-f030-492d-9683-b241007e7c37" name="Response SLA">
           <con:configuration>
-            <SLA>300</SLA>
+            <SLA>500</SLA>
           </con:configuration>
         </con:assertion>
         <con:credentials>
@@ -49,12 +41,12 @@
   </con:testStep>
   <con:testStep id="71028113-13ac-489c-97b7-da68e02762eb" name="Station 1" type="restrequest">
     <con:settings/>
-    <con:config xsi:type="con:RestRequestStep" methodName="GetStationDataByNameXML" resourcePath="/realtime/realtime.asmx/getStationDataByNameXML" service="http://api.irishrail.ie" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:config xsi:type="con:RestRequestStep" methodName="GetStationDataByNameXML" resourcePath="/realtime/realtime.asmx/getStationDataByNameXML" service="http://api.irishrail.ie">
       <con:restRequest id="7aa63b79-0e06-48ff-b5a2-6e242b56337d" mediaType="application/json" name="Station 1">
         <con:settings>
           <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
         </con:settings>
-        <con:endpoint>http://localhost:8088/</con:endpoint>
+        <con:endpoint>http://api.irishrail.ie</con:endpoint>
         <con:request/>
         <con:originalUri>http://api.irishrail.ie/realtime/realtime.asmx/getStationDataByNameXML</con:originalUri>
         <con:assertion type="Response SLA Assertion" id="50bbce61-2b00-4b81-87f8-6c3d5895a60b" name="Response SLA">
@@ -83,7 +75,7 @@
   </con:testStep>
   <con:testStep id="b130f7f9-7328-46a2-8d4e-98bb6d6e70ae" name="Station 2" type="restrequest">
     <con:settings/>
-    <con:config xsi:type="con:RestRequestStep" methodName="GetStationDataByNameXML" resourcePath="/realtime/realtime.asmx/getStationDataByNameXML" service="http://api.irishrail.ie" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:config xsi:type="con:RestRequestStep" methodName="GetStationDataByNameXML" resourcePath="/realtime/realtime.asmx/getStationDataByNameXML" service="http://api.irishrail.ie">
       <con:restRequest id="7aa63b79-0e06-48ff-b5a2-6e242b56337d" mediaType="application/json" name="Station 2">
         <con:settings>
           <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
@@ -122,7 +114,7 @@
   </con:testStep>
   <con:testStep id="9639a0fd-dc0f-4c00-a10c-064bcf1b1a2c" name="Station 3" type="restrequest">
     <con:settings/>
-    <con:config xsi:type="con:RestRequestStep" methodName="GetStationDataByNameXML" resourcePath="/realtime/realtime.asmx/getStationDataByNameXML" service="http://api.irishrail.ie" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:config xsi:type="con:RestRequestStep" methodName="GetStationDataByNameXML" resourcePath="/realtime/realtime.asmx/getStationDataByNameXML" service="http://api.irishrail.ie">
       <con:restRequest id="7aa63b79-0e06-48ff-b5a2-6e242b56337d" mediaType="application/json" name="Station 3">
         <con:settings>
           <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
@@ -161,7 +153,7 @@
   </con:testStep>
   <con:testStep id="4983a02d-8342-428b-8938-2803601b3eb7" name="Station 4" type="restrequest">
     <con:settings/>
-    <con:config xsi:type="con:RestRequestStep" methodName="GetStationDataByNameXML" resourcePath="/realtime/realtime.asmx/getStationDataByNameXML" service="http://api.irishrail.ie" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:config xsi:type="con:RestRequestStep" methodName="GetStationDataByNameXML" resourcePath="/realtime/realtime.asmx/getStationDataByNameXML" service="http://api.irishrail.ie">
       <con:restRequest id="7aa63b79-0e06-48ff-b5a2-6e242b56337d" mediaType="application/json" name="Station 4">
         <con:settings>
           <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
@@ -200,7 +192,7 @@
   </con:testStep>
   <con:testStep id="dad7e0ee-6b62-4021-8579-78d25f2a3d30" name="Station 5" type="restrequest">
     <con:settings/>
-    <con:config xsi:type="con:RestRequestStep" methodName="GetStationDataByNameXML" resourcePath="/realtime/realtime.asmx/getStationDataByNameXML" service="http://api.irishrail.ie" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:config xsi:type="con:RestRequestStep" methodName="GetStationDataByNameXML" resourcePath="/realtime/realtime.asmx/getStationDataByNameXML" service="http://api.irishrail.ie">
       <con:restRequest id="7aa63b79-0e06-48ff-b5a2-6e242b56337d" mediaType="application/json" name="Station 5">
         <con:settings>
           <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
@@ -235,14 +227,6 @@
           </con:entry>
         </con:environmentSpec>
       </con:restRequest>
-    </con:config>
-  </con:testStep>
-  <con:testStep type="datasourceloop" name="Data Source Loop" id="fd6a5c9a-335d-4b20-9ac2-7cb9fdd44cc3" disabled="true">
-    <con:settings/>
-    <con:config>
-      <dataSourceStep>Data Source</dataSourceStep>
-      <targetStep>Request Stations</targetStep>
-      <discardResults>true</discardResults>
     </con:config>
   </con:testStep>
   <con:properties/>

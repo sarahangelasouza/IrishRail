@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:resource id="c04a2a33-8836-418d-a41c-811f0c95dc01" name="GetStationDataByNameXML" path="/realtime/realtime.asmx/getStationDataByNameXML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
-  <con:settings>
+<con:resource xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config" id="c04a2a33-8836-418d-a41c-811f0c95dc01" name="GetStationDataByNameXML" path="/realtime/realtime.asmx/getStationDataByNameXML">
+  <con:settings id="d438d13b-9ea0-499b-b383-b55d25f280ce">
     <con:setting id="c04a2a33-8836-418d-a41c-811f0c95dc01fileName">GetStationDataByNameXML</con:setting>
   </con:settings>
   <con:parameters/>
@@ -21,6 +21,12 @@
       <con:status>200</con:status>
       <con:params/>
       <con:element>real:ArrayOfObjStationData</con:element>
+    </con:representation>
+    <con:representation type="RESPONSE">
+      <con:mediaType xsi:nil="true"/>
+      <con:status>0</con:status>
+      <con:params/>
+      <con:element>data</con:element>
     </con:representation>
     <con:request id="7aa63b79-0e06-48ff-b5a2-6e242b56337d" mediaType="application/json" name="Request 1">
       <con:settings/>

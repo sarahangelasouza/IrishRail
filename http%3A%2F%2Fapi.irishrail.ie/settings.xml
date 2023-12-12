@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:interface xsi:type="con:RestService" id="fcab9045-c83c-43f0-b7bc-182071bd580d" name="http://api.irishrail.ie" type="rest" wadlVersion="http://wadl.dev.java.net/2009/02" xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <con:settings>
+<con:interface xmlns:con="http://eviware.com/soapui/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:RestService" id="fcab9045-c83c-43f0-b7bc-182071bd580d" name="http://api.irishrail.ie" type="rest" wadlVersion="http://wadl.dev.java.net/2009/02">
+  <con:settings id="d081fb88-c757-4be5-a81b-37925918e015">
     <con:setting id="fcab9045-c83c-43f0-b7bc-182071bd580dfileName">http%3A%2F%2Fapi.irishrail.ie</con:setting>
   </con:settings>
   <con:definitionCache type="TEXT"/>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:testCase discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" id="11caa7a1-538c-47cb-b678-2a5b99b694e6" keepSession="false" name="GetAllStations" searchProperties="true" timeout="0" xmlns:con="http://eviware.com/soapui/config">
-  <con:settings>
+<con:testCase xmlns:con="http://eviware.com/soapui/config" discardOkResults="false" failOnError="true" failTestCaseOnErrors="true" id="11caa7a1-538c-47cb-b678-2a5b99b694e6" keepSession="false" name="GetAllStations" searchProperties="true" timeout="0">
+  <con:settings id="6666107c-f825-4bc2-a870-5b2f96894835">
     <con:setting id="11caa7a1-538c-47cb-b678-2a5b99b694e6fileName">GetAllStations</con:setting>
   </con:settings>
   <con:savedRecentRuns>1</con:savedRecentRuns>
   <con:testStep id="4b08c1c6-7b73-440c-8916-2a8d78519de9" name="Request 1" type="restrequest">
     <con:settings/>
-    <con:config xsi:type="con:RestRequestStep" methodName="GetAllStationsXML" resourcePath="/realtime/realtime.asmx/getAllStationsXML" service="http://api.irishrail.ie" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="con:RestRequestStep" methodName="GetAllStationsXML" resourcePath="/realtime/realtime.asmx/getAllStationsXML" service="http://api.irishrail.ie">
       <con:restRequest id="ed931a6f-aa7f-4420-a291-0971a65505d0" mediaType="application/json" name="Request 1">
         <con:settings>
           <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>

@@ -1,7 +1,7 @@
 http%3A%2F%2Fapi.irishrail.ie
 http%3A%2F%2Fapi.openweathermap.org
-http%3A%2F%2Fapi.irishrail.ie-Test-Suite
-Bayside-Request
 Query-Five-Locations
+Single-Stations
 Test-cases-based-on-single-requests
+AllStations
 http%3A%2F%2Fapi.irishrail.ie-Virtual-Service
